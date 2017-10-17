@@ -1,3 +1,37 @@
 body {
-background-color: slategray;
+background-color: darkslategray;
 }
+
+.jumbotron {
+	background-color:#ED5D40;
+
+	
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ED5D40;
+    color: white;
+    text-align: center;
+}
+
+.lead {
+	margin-top: 20px;
+	
+}
+
+.main-heading {
+	margin-top: -40px;
+	margin-bottom: 20px;
+
+}
+
+#time {
+	color: white;
+	height: 200px;
+	width: 300px;
+	}
+
