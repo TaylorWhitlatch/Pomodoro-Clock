@@ -1,22 +1,21 @@
 body {
-background-color: darkslategray;
+background-color: dimgray;
 }
 
 .jumbotron {
 	background-color:#ED5D40;
-
+	background: url('../images/background.jpg');
 	
+
+
+    color: #F0EAD6;
+    text-shadow:
+    -1px -1px 0 #000,
+
+    1px 1px 0 #000;  
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #ED5D40;
-    color: white;
-    text-align: center;
-}
+
 
 .lead {
 	margin-top: 20px;
@@ -27,6 +26,7 @@ background-color: darkslategray;
 	margin-top: -40px;
 	margin-bottom: 20px;
 
+
 }
 
 #time {
@@ -35,3 +35,17 @@ background-color: darkslategray;
 	width: 300px;
 	}
 
+.steps {
+/* 	background-color: #F0EAD6; */
+	color: black;
+	text-shadow: none;
+	background-color: #F0EAD6;
+	
+}
+
+#header-center {
+	
+	border: none;
+	
+
+}
