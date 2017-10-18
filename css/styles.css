@@ -6,6 +6,9 @@ background-color: dimgray;
 	background-color:#ED5D40;
 	background: url('../images/background.jpg');
 	color: #F0EAD6;
+	    text-shadow:
+    -1px -1px 0 #000,
+	1px 1px 0 #000;  
 
 }
 
@@ -15,12 +18,6 @@ background-color: dimgray;
     text-shadow:
     -1px -1px 0 #000,
 	1px 1px 0 #000;  
-}
-
-p {
-	font-family: 'Flamante';
-    color: #F0EAD6;
-	padding: 5px;
 }
 
 @font-face {
