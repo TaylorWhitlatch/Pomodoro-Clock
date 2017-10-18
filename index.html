@@ -13,6 +13,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/ticker.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<!-- JAVASCRIPT -->
@@ -21,19 +22,17 @@
 </head>
 <body>
 
-  <!-- BEGIN TOP CONTAINER -->
-  <div class="container">
+	<div class="container">
 
     <!-- BEGIN JUMBOTRON -->
 		<div class="jumbotron main-heading jumbotron-fluid text-center">
 
-      <!-- BEGIN BOTTOM CONTAINER -->
       <div class="container">
 
-        <!-- HEADER -->
+        <!-- Catch-Up! HEADER -->
         <h1 class="display-3 title title-text">Catch-Up!</h1>
 
-        <!-- SUMMARY -->
+        <!-- Catch-Up! SUMMARY -->
         <p class="lead">- a productivity timer based upon the <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> -</p>
 
         
@@ -52,7 +51,6 @@
             </div> <!-- end step 1 and step 2 headers -->
 
 
-            <!-- begin Tasks and Work/Play Time -->
             <div class="row steps col-sm-12">
 
                 <div class="col-xs-6" id="header-left-bottom">
@@ -68,10 +66,9 @@
                 </div>
 
 
-      	     </div> <!-- end of Tasks and Work/Play Time -->
+      	   </div> <!-- end of Tasks and Work/Play Time -->
 
-
-      </div> <!-- end of BOTTOM CONTAINER -->
+      </div> <!-- end of CONTAINER -->
 
           	<!-- <div class="footer">
           	         <p>Footer</p>
@@ -80,77 +77,72 @@
 
     </div> <!-- end of JUMBOTRON -->
 
+<div class="jumbotron text-center">
+  <div class="display-3 time">
+    <div class="minutes time">00</div>
+    <div class="colon time">:</div>
+    <div class="seconds time">00</div>
 
-    <!-- begin bottom JUMBOTRON -->
-    <div class="jumbotron text-center">
+  </div>
 
-        <!-- BEGIN CLOCK DISPLAY -->
-        <div class="display-3 time">
+<div class="news blue">
+  <span>To Do List:</span>
+  <ul>
+    <li id="current1">Current Task<li>
+    <li id="current2">Current Task</li>
+    <li id="current3">Current Task</li>
+    
+  </ul>
+</div>
 
-          <div class="minutes time">00</div>
-          <div class="colon time">:</div>
-          <div class="seconds time">00</div>
+ 
+<hr />
+  <div class="buttons">
+    <button class="btn btn-success btn-lg" href="#" role="Start" onclick="userInput()">Start
+ </button>
+  <button class="btn btn-primary btn-lg" href="#" role="Pause">Pause
+ </button>
+ <button class="btn btn-warning btn-lg" href="#" role="Reset">Reset
+ </button>
+</div>
+  <hr class="my-4">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 
-        </div> <!-- end of CLOCK DISPLAY -->
+  <p class="lead">
 
-
-        <p class="lead">Current Task</p>
-
-        <!-- thematic break -->
-        <hr class="my-4"> 
-
-        <!-- BUTTONS -->
-        <div class="buttons">
-          <button class="btn btn-success btn-lg" href="#" role="Start" onclick="userInput()">Start
-          </button>
-          <button class="btn btn-primary btn-lg" href="#" role="Pause">Pause
-          </button>
-          <button class="btn btn-warning btn-lg" href="#" role="Reset">Reset
-          </button>
-        </div> 
-
-        <!-- thematic break -->
-        <hr class="my-4">
-
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-
-        <!-- <p class="lead"> -->
-
-        <!-- <iframe src="https://open.spotify.com/embed?uri=spotify:user:spotify:playlist:37i9dQZF1DX8qqIDAkKiQg" width="300" height="80" frameborder="0" allowtransparency="true"></iframe> -->
+    <iframe src="https://open.spotify.com/embed?uri=spotify:user:spotify:playlist:37i9dQZF1DX8qqIDAkKiQg" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
 
 
 
-  </div> <!-- end of bottom JUMBOTRON -->
+</div>
 
+<!-- ************************TASK MODAL**************************** -->
+  <div class="task-modal">
+    
 
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      
+  <input type="text col-xs-12" id= "b1" class="task-form" placeholder="Task 1">
+  <input class="btn btn-default" id="a1" type="submit" value="Submit">
+   <input type="text col-xs-12" id= "b2" class="task-form" placeholder="Task 2">
+  <input class="btn btn-default" id="a2" type="submit" value="Submit">
+   <input type="text col-xs-12" id= "b3" class="task-form" placeholder="Task 3">
+  <input class="btn btn-default" id="a3" type="submit" value="Submit">  
 
-    <!-- ************************TASK MODAL**************************** -->
-
-    <div class="task-modal">
-
-
-      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            
-          <input type="text col-xs-12" class="task-form" placeholder="Task 1">
-          <input class="btn btn-default" type="submit" value="Submit">
-          <input type="text col-xs-12" class="task-form" placeholder="Task 1">
-          <input class="btn btn-default" type="submit" value="Submit">
-          <input type="text col-xs-12" class="task-form" placeholder="Task 1">
-          <input class="btn btn-default" type="submit" value="Submit">  
-
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
+</div>
 
 
-    <!-- ******************************************************************* -->
+<!-- ******************************************************************* -->
 
 
-  </div> <!-- END TOP CONTAINER -->
+
+	</div>
 
 </body>
-    <script type="text/javascript" src="js/countdowntimermod.js"></script>
+<script type="text/javascript" src="js/countdowntimermod.js"></script>
 </html>
