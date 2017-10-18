@@ -5,16 +5,14 @@ background-color: dimgray;
 .jumbotron {
 	background-color:#ED5D40;
 	background: url('../images/background.jpg');
-	color: #F0EAD6;
-
-}
-
-.title-text {
+	
 	font-family: 'Flamante';
     color: #F0EAD6;
     text-shadow:
     -1px -1px 0 #000,
 	1px 1px 0 #000;  
+
+
 }
 
 p {
