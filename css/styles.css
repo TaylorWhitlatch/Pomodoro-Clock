@@ -49,3 +49,12 @@ background-color: dimgray;
 	
 
 }
+
+.time {
+	display: inline-block;
+}
+
+.colon {
+	margin-right: -60px;
+	margin-left: -60px;
+}
