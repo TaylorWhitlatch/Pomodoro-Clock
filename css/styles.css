@@ -6,7 +6,7 @@ background-color: dimgray;
 	background-color:#ED5D40;
 	background: url('../images/background.jpg');
 	
-	font-family: sans-serif;
+	font-family: 'Flamante';
     color: #F0EAD6;
     text-shadow:
     -1px -1px 0 #000,
@@ -14,10 +14,17 @@ background-color: dimgray;
     1px 1px 0 #000;  
 }
 
+@font-face {
+	font-family: 'Flamante';
+	src: url('../fonts/Flamante/Flamante-Serif-FFP.ttf');
+	font-weight: 500;
+}
 
 
 .lead {
 	margin-top: 20px;
+	font-family: sans-serif;
+	text-shadow: none;
 	
 }
 
