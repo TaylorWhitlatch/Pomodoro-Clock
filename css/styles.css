@@ -22,6 +22,10 @@ background-color: dimgray;
 
 }
 
+p {
+	font-family: sans-serif;
+}
+
 @font-face {
 	font-family: 'Flamante';
 	src: url('../fonts/Flamante/Flamante-Serif-FFP.ttf');
