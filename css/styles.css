@@ -41,6 +41,8 @@ p {
 
 }
 
+.
+
 #time {
 	color: white;
 	height: 200px;
@@ -70,4 +72,12 @@ p {
 .colon {
 	margin-right: -60px;
 	margin-left: -60px;
+}
+
+.task-button {
+	background-color: dimgray;
+}
+
+.task-form {
+	width: 60%;
 }
