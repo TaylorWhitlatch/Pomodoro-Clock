@@ -1,5 +1,6 @@
 body {
-background-color: dimgray;
+background: url('../images/background2.jpg');
+background-size: cover;
 }
 
 .jumbotron {
@@ -96,4 +97,8 @@ p {
 	1px 1px 0 #000; 
 	
 
+}
+
+hr {
+	background-color: blue;
 }
