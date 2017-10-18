@@ -6,8 +6,7 @@ background-color: dimgray;
 	background-color:#ED5D40;
 	background: url('../images/background.jpg');
 	
-
-
+	font-family: sans-serif;
     color: #F0EAD6;
     text-shadow:
     -1px -1px 0 #000,
@@ -52,7 +51,7 @@ background-color: dimgray;
 
 .time {
 	display: inline-block;
-	
+
 }
 
 .colon {
