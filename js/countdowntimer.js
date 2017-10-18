@@ -19,7 +19,7 @@ function timer(limit){
   var minutes = Math.floor((timeRemaining / 1000 / 60) % 60);
   var seconds = Math.floor((timeRemaining / 1000) % 60);
   console.log(minutes,seconds);
-  $('.minutes').html(minutes) 
+  $('.minutes').html('minutes') 
   if (minutes >= limit) {
     clearInterval(interval);
     timer(userBreak);
