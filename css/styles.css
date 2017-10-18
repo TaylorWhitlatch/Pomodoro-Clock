@@ -74,8 +74,7 @@ background-color: dimgray;
 }
 
 .colon {
-	margin-right: -60px;
-	margin-left: -60px;
+	font-size: 125px;
 }
 
 .task-button {
@@ -87,5 +86,6 @@ background-color: dimgray;
 }
 
 .time {
+	font-size: 125px;
 
 }
