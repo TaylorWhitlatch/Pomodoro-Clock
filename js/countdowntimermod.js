@@ -45,8 +45,29 @@ function timerWork(limit){
     }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
   document.getElementsByClassName('seconds')[0].style.fontSize = "125px";
-  document.getElementsByClassName('minutes')[0].innerHTML = minutes;
-  document.getElementsByClassName('seconds')[0].innerHTML = seconds;
+  document.getElementsByClassName('minutes')[0].innerHTML = minutes.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;
+  document.getElementsByClassName('seconds')[0].innerHTML = seconds.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;;
   console.log(minutes, seconds);
   }, 100)
 }
+
+$("#a1").click(function(e){
+    e.preventDefault();
+    var value = $("#b1").val();
+    console.log(value);
+    document.getElementById('current1').innerHTML = value; 
+});
+
+$("#a2").click(function(e){
+    e.preventDefault();
+    var value = $("#b2").val();
+    console.log(value);
+    document.getElementById('current2').innerHTML = value; 
+});
+
+$("#a3").click(function(e){
+    e.preventDefault();
+    var value = $("#b3").val();
+    console.log(value);
+    document.getElementById('current3').innerHTML = value; 
+});
