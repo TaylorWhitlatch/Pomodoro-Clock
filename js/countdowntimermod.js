@@ -7,27 +7,27 @@ console.log('loading script');
 // var today = date.toDateString();
 // console.log(`Today is ${today}`);
 // document.getElementById('today').innerHTML = today;
-$("#link").click(function() {
-  opendialog("https://en.wikipedia.org/wiki/Pomodoro_Technique");
-});
+// $("#link").click(function() {
+//   opendialog("https://en.wikipedia.org/wiki/Pomodoro_Technique");
+// });
 
-function opendialog(page) {
-  var $dialog = $('#link')
-  .html('<iframe style="border: 0px; " src="' + page + '" width="100%" height="100%"></iframe>')
-  .dialog({
-    title: "Page",
-    autoOpen: false,
-    dialogClass: 'dialog_fixed,ui-widget-header',
-    modal: true,
-    height: 500,
-    minWidth: 400,
-    minHeight: 400,
-    draggable:true,
-    /*close: function () { $(this).remove(); },*/
-    buttons: { "Ok": function () {         $(this).dialog("close"); } }
-  });
-  $dialog.dialog('open');
-} 
+// function opendialog(page) {
+//   var $dialog = $('#link')
+//   .html('<iframe style="border: 0px; " src="' + page + '" width="100%" height="100%"></iframe>')
+//   .dialog({
+//     title: "Page",
+//     autoOpen: false,
+//     dialogClass: 'dialog_fixed,ui-widget-header',
+//     modal: true,
+//     height: 500,
+//     minWidth: 400,
+//     minHeight: 400,
+//     draggable:true,
+//     /*close: function () { $(this).remove(); },*/
+//     buttons: { "Ok": function () {         $(this).dialog("close"); } }
+//   });
+//   $dialog.dialog('open');
+// } 
 
 function userInput(){
   var userWork = document.getElementsByClassName('work-interval-form')[0].value;
