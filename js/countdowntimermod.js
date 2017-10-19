@@ -25,6 +25,8 @@ function userInput(){
 
 
 function timerWork(limit){
+  $('#start').hide();
+  $('#reset').attr('disabled', true);
   var seconds = 60 //0;
   var minutes = limit - 1;//0;
  
@@ -46,6 +48,7 @@ function timerWork(limit){
     }else if (seconds === 0 && minutes === 0){
         clearInterval(interval);
         // return minutes;
+        $('#reset').attr('disabled', false);
       }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
   document.getElementsByClassName('seconds')[0].style.fontSize = "125px";
@@ -53,6 +56,8 @@ function timerWork(limit){
   document.getElementsByClassName('seconds')[0].innerHTML = seconds.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;;
   console.log(minutes, seconds);
   }, 50)
+
+  
 
  };
 
@@ -95,6 +100,7 @@ var userWork = document.getElementsByClassName('work-interval-form')[0].value;
 var userWork = Number(document.getElementsByClassName('work-interval-form')[0].value);
   document.getElementsByClassName('minutes')[0].innerHTML = userWork.toLocaleString(undefined,{minimumIntegerDigits: 2});
   document.getElementsByClassName('seconds')[0].innerHTML = '00';
+  $('#start').show();
 
 }
 
