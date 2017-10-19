@@ -111,6 +111,12 @@ $("#a1").click(function(e){
     document.getElementById('current1').innerHTML = value; 
 });
 
+$("#c1").click(function(e){
+    e.preventDefault();
+    document.getElementById('b1').value = "TASK 1 DONE";
+
+})
+
 $("#a2").click(function(e){
     e.preventDefault();
     var value = $("#b2").val();
@@ -118,9 +124,24 @@ $("#a2").click(function(e){
     document.getElementById('current2').innerHTML = value; 
 });
 
+$("#c2").click(function(e){
+    e.preventDefault();
+    document.getElementById('b2').value = "TASK 2 DONE";
+
+})
+
 $("#a3").click(function(e){
     e.preventDefault();
     var value = $("#b3").val();
     console.log(value);
     document.getElementById('current3').innerHTML = value; 
 });
+
+$("#c3").click(function(e){
+    e.preventDefault();
+    document.getElementById('b3').value = "TASK 3 DONE";
+
+})
+
+
+
