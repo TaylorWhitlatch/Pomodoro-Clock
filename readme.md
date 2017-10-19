@@ -1,6 +1,6 @@
 ## Overview of Project:
 Catch-Up! is a website designed with busy professionals in mind. By entering your tasks, work time, and break time you can use Catch-Up! to create a custom timer that will maximize your effectiveness and time management skills. 
-There are only so many hours in a day! Let Catch-Up! help out. :tomato: 
+:tomato: There are only so many hours in a day! Let Catch-Up! help out.  
 
 ## The Team:
 * **[Nikolajs Bogucharsky](https://github.com/niktechnopro)**: 
