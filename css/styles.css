@@ -103,3 +103,14 @@ p {
 	border-right: 1px solid black;
 
 }
+
+.btn {
+	border-radius: 50px;
+	border: 1px solid #F0EAD6;
+	box-shadow: 2px 2px 2px 1	px black;
+}
+
+.time-box {
+	/* border: 2px solid #F0EAD6; */
+	padding: 0px 10px;
+}
