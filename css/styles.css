@@ -12,7 +12,14 @@ body {
 	1px 1px 0 #000;  
 }
 
-a:hover { text-decoration: underline }
+a:hover { 
+	text-decoration: underline 
+}
+
+a { 
+	color: #F0EAD6; 
+	text-decoration: none; 
+}
 
 .title-text {
 	font-family: 'Flamante';
