@@ -1,12 +1,12 @@
 ## Overview of Project:
-:tomato: Catch-Up! is a website designed with busy professionals in mind. By entering your tasks, work time, and break time you can use Catch-Up! to create a custom timer that will maximize your effectiveness and time management skills. 
-There are only so many hours in a day! Let Catch-Up! help out.
+Catch-Up! is a website designed with busy professionals in mind. By entering your tasks, work time, and break time you can use Catch-Up! to create a custom timer that will maximize your effectiveness and time management skills. 
+There are only so many hours in a day! Let Catch-Up! help out. :tomato: 
 
 ## The Team:
 * **[Nikolajs Bogucharsky](https://github.com/niktechnopro)**: 
 	* **Primary team role**: text text text
   	* **Contributions**:  text text text 
-  	* **Key code portions**: text text text
+  	* **Key code portions**: JavaScript
 
 * **[Taylor Whitlatch](https://github.com/TaylorWhitlatch)**: 
 	* **Primary team role**: Front-End Styling
@@ -16,12 +16,12 @@ There are only so many hours in a day! Let Catch-Up! help out.
 * **[Saif Mahmud](https://github.com/saiftg)**:
 	* **Primary team role**: text text text
   	* **Contributions**:  text text text 
-  	* **Key code portions**: text text text 
+  	* **Key code portions**: JavaScript 
 
 * **[Zach Dunn](https://github.com/ZachDunn8)**: 
 	* **Primary team role**: text text text
   	* **Contributions**:  text text text 
-  	* **Key code portions**: text text text
+  	* **Key code portions**: JavaScript
 
 * **[Jennifer Menze](https://github.com/jamenze)**: 
   	* **Primary team role**: Prototype, Styling
