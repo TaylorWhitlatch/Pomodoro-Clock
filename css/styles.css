@@ -9,7 +9,9 @@ body {
 	color: #F0EAD6;
 	    text-shadow:
     -1px -1px 0 #000,
-	1px 1px 0 #000;  
+	1px 1px 0 #000; 
+
+	border: 2px solid #F0EAD6; 
 }
 
 a:hover { 
@@ -61,7 +63,8 @@ p {
 	color: black;
 	text-shadow: none;
 	background-color: #F0EAD6;
-	padding: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 #header-center {
@@ -91,6 +94,12 @@ p {
 		1px 1px 0 #000; 
 }
 
-hr {
-	background-color: blue;
+.jumbo-box {
+	bottom: 0px;
+	border-radius: 50%
+}
+
+.header-box-left {
+	border-right: 1px solid black;
+
 }
