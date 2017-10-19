@@ -92,6 +92,7 @@ function timerWork(limit){
 
 function reset(){
 var userWork = document.getElementsByClassName('work-interval-form')[0].value;
+var userWork = Number(document.getElementsByClassName('work-interval-form')[0].value);
   document.getElementsByClassName('minutes')[0].innerHTML = userWork.toLocaleString(undefined,{minimumIntegerDigits: 2});
   document.getElementsByClassName('seconds')[0].innerHTML = '00';
 
