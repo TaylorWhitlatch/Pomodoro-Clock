@@ -21,7 +21,7 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
 
 * **[Zach Dunn](https://github.com/ZachDunn8)**: 
 	* **Primary team role**: text text text
-  	* **Contributions**:  text text text 
+  	* **Contributions**:  Spotify widget 
   	* **Key code portions**: JavaScript
 
 * **[Jennifer Menze](https://github.com/jamenze)**: 
@@ -43,10 +43,10 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
 	* jQuery
 
 ## MVP (Minimum Viable Product):
-* Countdown Timer
-* Website Display
-* Text
-* Text
+* Customizable timer based on user's input of work and play time.
+* Timer display that begins countdown based upon user's input.
+* Timer display includes Start, Pause, and Reset buttons.
+* Website layout is clean and easy to navigate.
 
 
 ## Code Snippets:
@@ -60,8 +60,8 @@ $(function(){
 ![alt text](https://i.pinimg.com/736x/02/a7/8a/02a78a1d9c8a6c94ecb633f7cfe6b849--smile-funny-stuff.jpg "Not the real image | do not use")
 
 ## 3 Contributions We’d Like to See:
-1. Text text text
-2. Text text text
-3. Text text text
+1. Incorporate periodic displays of encouraging quotes and messages to inspire the user to keep working hard!
+2. User is given an option for a longer break if they've been working for a while.
+3. Add animations to timer display depending on time left (ex: numbers flash when less than 30 seconds remain).
 
-## URL to live project
+## [View a live demo of Catch-Up!](https://www.google.com)
