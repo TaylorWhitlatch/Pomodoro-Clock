@@ -81,6 +81,8 @@ p {
 
 .task-button {
 	background-color: dimgray;
+	margin-top: 1%
+	
 }
 
 .task-form {
@@ -113,4 +115,8 @@ p {
 .time-box {
 	/* border: 2px solid #F0EAD6; */
 	padding: 0px 10px;
+}
+
+.work {
+	border-right: 1px solid black;
 }
