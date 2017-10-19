@@ -11,6 +11,7 @@
 	
   <!-- BOOTSTRAP JAVASCRIPT PLUGIN -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/countdowntimermod.js"></script>
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/ticker.css">
@@ -92,15 +93,15 @@
  
 <hr />
   <div class="buttons">
-    <button class="btn btn-success btn-lg" href="#" role="Start" onclick="userInput()">Start
+    <button class="btn btn-success btn-lg" href="#" id="start" onclick="userInput()">Start
  </button>
-  <button class="btn btn-primary btn-lg" href="#" role="Pause">Pause
- </button>
- <button class="btn btn-warning btn-lg" href="#" role="Reset">Reset
+ <!--  <button class="btn btn-primary btn-lg" href="#" id="Pause">Pause
+ </button> -->
+ <button class="btn btn-warning btn-lg" href="#" id="reset" onclick="reset()">Reset
  </button>
 </div>
   <hr class="my-4">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-2">Break</button>
+  <button type="button" class="btn btn-primary" href=# id="break" data-toggle="modal" data-target=".bs-example-modal-lg-2">Break</button>
   <p class="lead">
 
 
@@ -206,5 +207,4 @@
 	</div>
 
 </body>
-<script type="text/javascript" src="js/countdowntimermod.js"></script>
 </html>
