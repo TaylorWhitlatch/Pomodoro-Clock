@@ -26,7 +26,7 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
 
 * **[Jennifer Menze](https://github.com/jamenze)**: 
   	* **Primary team role**: Prototype, Styling
-  	* **Contributions**:  Website name and layout. Assisted with implementing design.
+  	* **Contributions**:  Website name, layout, and technical writing. Assisted with implementing design.
   	* **Key code portions**: Website wireframe, README file, Some HTML and CSS
 
 
