@@ -1,30 +1,32 @@
 ## Overview of Project:
+Catch-Up! is a website designed with busy professionals in mind. By entering your tasks, work time, and break time you can use Catch-Up! to create a custom timer that will maximize your effectiveness and time management skills. 
+There are only so many hours in a day! Let Catch-Up! help out.
 
 ## The Team:
 * **[Nikolajs Bogucharsky](https://github.com/niktechnopro)**: 
 	* **Primary team role**: text text text
-  * **Contributions**:  text text text 
-  * **Key code portions**: text text text
+  	* **Contributions**:  text text text 
+  	* **Key code portions**: text text text
 
 * **[Taylor Whitlatch](https://github.com/TaylorWhitlatch)**: 
-	* **Primary team role**: text text text
-  * **Contributions**:  text text text 
-  * **Key code portions**: text text text
+	* **Primary team role**: Front-End Styling
+  	* **Contributions**:  text text text 
+  	* **Key code portions**: Most of the HTML and CSS
 
 * **[Saif Mahmud](https://github.com/saiftg)**:
 	* **Primary team role**: text text text
-  * **Contributions**:  text text text 
-  * **Key code portions**: text text text 
+  	* **Contributions**:  text text text 
+  	* **Key code portions**: text text text 
 
 * **[Zach Dunn](https://github.com/ZachDunn8)**: 
 	* **Primary team role**: text text text
-  * **Contributions**:  text text text 
-  * **Key code portions**: text text text
+  	* **Contributions**:  text text text 
+  	* **Key code portions**: text text text
 
 * **[Jennifer Menze](https://github.com/jamenze)**: 
-  * **Primary team role**: text text text
-  * **Contributions**:  text text text 
-  * **Key code portions**: text text text
+  	* **Primary team role**: Prototype, Styling
+  	* **Contributions**:  Website name and layout. Assisted with implementing design.
+  	* **Key code portions**: Website wireframe, README file, Some HTML and CSS
 
 
 ## Technologies, Frameworks, and Programming Languages used:
