@@ -6,7 +6,8 @@
   overflow: hidden;
   border-radius: 4px;
   padding: 3px;
-  -webkit-user-select: none
+  -webkit-user-select: none;
+  border: 1px solid #F0EAD6 ;
 } 
 
 .news span {

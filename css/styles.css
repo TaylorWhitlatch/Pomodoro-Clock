@@ -9,7 +9,9 @@ body {
 	color: #F0EAD6;
 	    text-shadow:
     -1px -1px 0 #000,
-	1px 1px 0 #000;  
+	1px 1px 0 #000; 
+
+	border: 2px solid #F0EAD6; 
 }
 
 a:hover { 
@@ -61,7 +63,8 @@ p {
 	color: black;
 	text-shadow: none;
 	background-color: #F0EAD6;
-	padding: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 #header-center {
@@ -78,6 +81,8 @@ p {
 
 .task-button {
 	background-color: dimgray;
+	margin-top: 1%
+	
 }
 
 .task-form {
@@ -91,6 +96,27 @@ p {
 		1px 1px 0 #000; 
 }
 
-hr {
-	background-color: blue;
+.jumbo-box {
+	bottom: 0px;
+	border-radius: 50%
+}
+
+.header-box-left {
+	border-right: 1px solid black;
+
+}
+
+.btn {
+	border-radius: 50px;
+	border: 1px solid #F0EAD6;
+	box-shadow: 2px 2px 2px 1px black;
+}
+
+.time-box {
+	/* border: 2px solid #F0EAD6; */
+	padding: 0px 10px;
+}
+
+.work {
+	border-right: 1px solid black;
 }
