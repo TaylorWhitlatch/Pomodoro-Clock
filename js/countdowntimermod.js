@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 console.log("test")
 var workLength = 25;
@@ -45,6 +46,25 @@ function userInput(){
   timerWork(workLength)
   $('#break').hide();
 }
+=======
+function userInput(){
+  var userWork = document.getElementsByClassName('work-interval-form')[0].value;
+  var userBreak = document.getElementsByClassName('break-interval-form')[0].value;
+  console.log(userWork);
+ 
+  timerWork(userWork)
+  $('#break').hide();
+
+
+
+  }
+
+
+
+  
+
+
+>>>>>>> 5d8827778c74429df2f99426da9ea11443a9a4b4
 
 
 function timerWork(limit){
@@ -73,8 +93,14 @@ function timerWork(limit){
         // return minutes;
         $('#reset').attr('disabled', false);
         $('#break').show();
+<<<<<<< HEAD
 
         timerBreak(playLength);
+=======
+        var userBreak = document.getElementsByClassName('break-interval-form')[0].value;
+
+        timerBreak(userBreak);
+>>>>>>> 5d8827778c74429df2f99426da9ea11443a9a4b4
       }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
   document.getElementsByClassName('seconds')[0].style.fontSize = "125px";
@@ -103,7 +129,12 @@ function timerWork(limit){
     }else{
         clearInterval(interval);
         // return minutes;
+<<<<<<< HEAD
         timerWork(workLength);
+=======
+        var userWork = document.getElementsByClassName('work-interval-form')[0].value;
+        timerWork(userWork);
+>>>>>>> 5d8827778c74429df2f99426da9ea11443a9a4b4
         $('#break').hide();
       }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
@@ -130,7 +161,12 @@ function timerWork(limit){
 
 
 function reset(){
+<<<<<<< HEAD
   document.getElementsByClassName('minutes')[0].innerHTML = workLength.toLocaleString(undefined,{minimumIntegerDigits: 2});
+=======
+var userWork = Number(document.getElementsByClassName('work-interval-form')[0].value);
+  document.getElementsByClassName('minutes')[0].innerHTML = userWork.toLocaleString(undefined,{minimumIntegerDigits: 2});
+>>>>>>> 5d8827778c74429df2f99426da9ea11443a9a4b4
   document.getElementsByClassName('seconds')[0].innerHTML = '00';
     $('#start').show();
 
