@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 
 $('#start').click(function(e) {
-     $('body').css('background-image', 'url(images/background4.jpg)');
+     $('body').css('background-image', 'url(images/background.jpg)');
      $('body').css('background-repeat', 'no-repeat');
      $('body').css('background-size', 'cover');
      $('.jumbotron').css('background-image', 'url(images/background3.jpg');
@@ -18,10 +18,10 @@ $('#start').click(function(e) {
  });
 
 $('#reset').click(function(e) {
-    $('body').css('background', 'url(images/background3.jpg)');
+    $('body').css('background-image', 'url(images/background3.jpg)');
     $('body').css('background-repeat', 'no-repeat');
      $('body').css('background-size', 'cover');
-     $('.jumbotron').css('background', 'url(images/background4.jpg');
+     $('.jumbotron').css('background', 'url(images/background.jpg');
      $('.jumbotron').css('background-repeat', 'no-repeat');
      $('.jumbotron').css('background-size', 'cover');
  });

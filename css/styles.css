@@ -1,6 +1,6 @@
 body {
 
-	background: url('../images/background2.jpg');
+	background-color: #1d63bd;
 	background-size: cover;
 
 	background: url('../images/background3.jpg');
@@ -11,8 +11,8 @@ body {
 
 	
 .jumbotron {
-	background-color:#ED5D40;
-	background: url('../images/background4.jpg');
+	background-color:#b70b19;
+	background: url('../images/background.jpg');
 	color: #F0EAD6;
 	    text-shadow:
     -1px -1px 0 #000,
