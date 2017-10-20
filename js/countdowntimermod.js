@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 console.log("test")
 var workLength = 25;
@@ -21,8 +20,9 @@ function deductWorkTime(){//to deduct session time
   }else{
     workLength = 5;
   }
-  $('.minutes').text(workLength);
-  $('.minutes-interval').text(workLength);
+  var p = workLength.toLocaleString(undefined,{minimumIntegerDigits: 2})
+  $('.minutes').text(p);
+  $('.minutes-interval').text(p);
 }
 
 
@@ -46,26 +46,14 @@ function userInput(){
   timerWork(workLength)
   $('#break').hide();
 }
-=======
-function userInput(){
-  var userWork = document.getElementsByClassName('work-interval-form')[0].value;
-  var userBreak = document.getElementsByClassName('break-interval-form')[0].value;
-  console.log(userWork);
- 
-  timerWork(userWork)
-  $('#break').hide();
 
 
+function stopAudio(audio) {
+    audio.pause();
+    audio.currentTime = 0;
+}
 
-  }
-
-
-
-  
-
-
->>>>>>> 5d8827778c74429df2f99426da9ea11443a9a4b4
-
+//then using it:
 
 function timerWork(limit){
   $('#start').hide();
@@ -73,15 +61,7 @@ function timerWork(limit){
   var seconds = 60 //0;
   var minutes = limit - 1;//0;
  
-  // var x = setInterval(function(){
-  //   if (limit <= minutes){
-  //     return minutes;
-  //   }else if (seconds >= 60){
-  //     minutes += 1;
-  //     seconds = 0;
-  //   }else{
-  //     seconds += 1;
-  //   }
+
   var interval = setInterval(function(){
     if (seconds > 0){
     seconds -= 1;
@@ -93,21 +73,15 @@ function timerWork(limit){
         // return minutes;
         $('#reset').attr('disabled', false);
         $('#break').show();
-<<<<<<< HEAD
 
         timerBreak(playLength);
-=======
-        var userBreak = document.getElementsByClassName('break-interval-form')[0].value;
-
-        timerBreak(userBreak);
->>>>>>> 5d8827778c74429df2f99426da9ea11443a9a4b4
       }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
   document.getElementsByClassName('seconds')[0].style.fontSize = "125px";
   document.getElementsByClassName('minutes')[0].innerHTML = minutes.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;
   document.getElementsByClassName('seconds')[0].innerHTML = seconds.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;;
   console.log(minutes, seconds);
-  }, 50)
+  }, 20)
 
   
   // $('#break').show();
@@ -120,35 +94,39 @@ function timerWork(limit){
   var seconds = 60 //0;
   var minutes = limit - 1;//0;
 
+ 
+  $('#stop').click(function(){
+      console.log("supppp");
+      clearInterval(interval);
+      console.log(minutes,seconds);
+    });
+
+
+
   var interval = setInterval(function(){
     if (seconds > 0){
     seconds -= 1;
     }else if (seconds === 0 && minutes > 0){
       minutes -= 1;
       seconds = 60;
+    // }else if (minutes === 0 && seconds <= 15){
+    //   alarm.play();
     }else{
         clearInterval(interval);
         // return minutes;
-<<<<<<< HEAD
         timerWork(workLength);
-=======
-        var userWork = document.getElementsByClassName('work-interval-form')[0].value;
-        timerWork(userWork);
->>>>>>> 5d8827778c74429df2f99426da9ea11443a9a4b4
         $('#break').hide();
+        // stopAudio(alarm);
+
       }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
   document.getElementsByClassName('seconds')[0].style.fontSize = "125px";
   document.getElementsByClassName('minutes')[0].innerHTML = minutes.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;
   document.getElementsByClassName('seconds')[0].innerHTML = seconds.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;;
   console.log(minutes, seconds);
-  }, 50)
+  }, 20)
 
-    $('#stop').click(function(){
-      minutes;
-      
-    });
-
+  
  };
 
  // function stop(){
@@ -161,16 +139,13 @@ function timerWork(limit){
 
 
 function reset(){
-<<<<<<< HEAD
   document.getElementsByClassName('minutes')[0].innerHTML = workLength.toLocaleString(undefined,{minimumIntegerDigits: 2});
-=======
-var userWork = Number(document.getElementsByClassName('work-interval-form')[0].value);
-  document.getElementsByClassName('minutes')[0].innerHTML = userWork.toLocaleString(undefined,{minimumIntegerDigits: 2});
->>>>>>> 5d8827778c74429df2f99426da9ea11443a9a4b4
   document.getElementsByClassName('seconds')[0].innerHTML = '00';
     $('#start').show();
 
 }
+
+
 
 
 $(document).ready(function(){
