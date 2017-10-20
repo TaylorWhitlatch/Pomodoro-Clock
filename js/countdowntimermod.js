@@ -20,12 +20,14 @@ function userInput(){
   timerWork(userWork)
 }
 
+  
 
 
 
 
 function timerWork(limit){
   $('#start').hide();
+  $('#breaktime').attr('disabled', true);
   $('#reset').attr('disabled', true);
   var seconds = 60 //0;
   var minutes = limit - 1;//0;
@@ -58,6 +60,7 @@ function timerWork(limit){
   }, 50)
 
   
+  // $('#break').show();
 
  };
 
@@ -96,11 +99,10 @@ function timerWork(limit){
 
 
 function reset(){
-var userWork = document.getElementsByClassName('work-interval-form')[0].value;
 var userWork = Number(document.getElementsByClassName('work-interval-form')[0].value);
   document.getElementsByClassName('minutes')[0].innerHTML = userWork.toLocaleString(undefined,{minimumIntegerDigits: 2});
   document.getElementsByClassName('seconds')[0].innerHTML = '00';
-  $('#start').show();
+    $('#start').show();
 
 }
 
