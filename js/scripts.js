@@ -7,13 +7,7 @@ $(document).ready(function(){
 
 
 
-<<<<<<< HEAD
-$('#break').click(function() {
-     $('.container').css('background', 'url(../images/background.jpg)');
 
- });
-
-=======
 $('#start').click(function(e) {
      $('body').css('background-image', 'url(images/background4.jpg)');
      $('body').css('background-repeat', 'no-repeat');
@@ -31,6 +25,6 @@ $('#reset').click(function(e) {
      $('.jumbotron').css('background-repeat', 'no-repeat');
      $('.jumbotron').css('background-size', 'cover');
  });
->>>>>>> 5d8827778c74429df2f99426da9ea11443a9a4b4
+
 
 });
