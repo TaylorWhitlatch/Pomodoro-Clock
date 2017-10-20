@@ -127,7 +127,7 @@ text-shadow: 6px 6px 0px rgba(240,234,214,0.2);
 }
 
 .work {
-	border-right: 1px solid black;
+	/* border-right: 1px solid black; */
 
 }
 
@@ -151,24 +151,26 @@ text-shadow: 6px 6px 0px rgba(240,234,214,0.2);
 
 .break-interval-form {
 	color: black;
-	width: 25%;
 	float: left;
+
 }
 
 .work-interval-form {
 	color: black;
-	width: 25%;
+	/* width: 25%; */
 	float: right;
 }
 
 .play {
 	text-align: left;
-	margin-left: -3%
+	
+
+	
 }
 
 .work-time {
 	text-align: right;
-	margin-left: 3%;
+	
 }
 
 .logo {
@@ -184,3 +186,4 @@ h1 {
 	display: inline-block;
 	line-height: 50%
 }
+
