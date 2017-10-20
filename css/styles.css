@@ -157,20 +157,20 @@ text-shadow: 6px 6px 0px rgba(240,234,214,0.2);
 
 
 .break-interval-form {
-	color: black;
+	
 	float: left;
+	margin-left: -4%
 
 }
 
-.work-interval-form {
-	color: black;
-	/* width: 25%; */
+.work-interval-form{
 	float: right;
+	margin-right: -1%;
 }
 
 .play {
 	text-align: left;
-	
+
 
 	
 }
