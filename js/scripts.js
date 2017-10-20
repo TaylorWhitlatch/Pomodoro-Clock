@@ -7,5 +7,10 @@ $(document).ready(function(){
 
 
 
+$('#break').click(function() {
+     $('.container').css('background', 'url(../images/background.jpg)');
+
+ });
+
 
 });

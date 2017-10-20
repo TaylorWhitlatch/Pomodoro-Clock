@@ -1,15 +1,27 @@
 body {
-background-color: dimgray;
+	background: url('../images/background2.jpg');
+	background-size: cover;
 }
 
+	
 .jumbotron {
 	background-color:#ED5D40;
 	background: url('../images/background.jpg');
 	color: #F0EAD6;
 	    text-shadow:
     -1px -1px 0 #000,
-	1px 1px 0 #000;  
+	1px 1px 0 #000; 
 
+	/* border: 2px solid #F0EAD6;  */
+}
+
+a:hover { 
+	text-decoration: underline 
+}
+
+a { 
+	color: #F0EAD6; 
+	text-decoration: none; 
 }
 
 .title-text {
@@ -18,8 +30,10 @@ background-color: dimgray;
     text-shadow:
     -1px -1px 0 #000,
 	1px 1px 0 #000;  
+}
 
-
+p {
+	font-family: sans-serif;
 }
 
 @font-face {
@@ -28,58 +42,48 @@ background-color: dimgray;
 	font-weight: 500;
 }
 
-
 .lead {
 	margin-top: 20px;
 	font-family: sans-serif;
 	text-shadow: none;
-
-	
 }
 
 .main-heading {
 	margin-top: -40px;
 	margin-bottom: 20px;
-
-
 }
-
-.
 
 #time {
 	color: white;
 	height: 200px;
 	width: 300px;
-	}
+}
 
 .steps {
 /* 	background-color: #F0EAD6; */
-	color: black;
+	color: #F0EAD6;
 	text-shadow: none;
-	background-color: #F0EAD6;
-	padding: 5px;
-	
+	/* background-color: #F0EAD6; */
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 #header-center {
-	
 	border: none;
-	
-
 }
 
 .time {
 	display: inline-block;
-
 }
 
 .colon {
-	margin-right: -60px;
-	margin-left: -60px;
+	font-size: 125px;
 }
 
 .task-button {
 	background-color: dimgray;
+	margin-top: 1%
+	
 }
 
 .task-form {
@@ -87,5 +91,93 @@ background-color: dimgray;
 }
 
 .time {
+	font-size: 125px;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px 1px 0 #000; 
+		1
+text-shadow: 6px 6px 0px rgba(240,234,214,0.2);
+		
+		
+}
 
+.jumbo-box {
+	bottom: 0px;
+	
+
+}
+
+.header-box-left {
+	
+
+}
+
+.btn {
+	border-radius: 30px;
+	border: 1px solid #F0EAD6;
+	box-shadow: 2px 2px 2px 1px black;
+}
+
+.time-box {
+	/* border: 2px solid #F0EAD6; */
+	padding: 0px 10px;
+}
+
+.work {
+	border-right: 1px solid black;
+
+}
+
+.btn-break {
+	font-size: 20px;
+}
+
+.car-item {
+	margin-left: 15%;
+
+}
+
+.btn-remove {
+	float: right;
+	font-size: 12px;
+	
+	margin: 0px 5px;
+}
+
+
+
+.break-interval-form {
+	color: black;
+	width: 25%;
+	float: left;
+}
+
+.work-interval-form {
+	color: black;
+	width: 25%;
+	float: right;
+}
+
+.play {
+	text-align: left;
+	margin-left: -3%
+}
+
+.work-time {
+	text-align: right;
+	margin-left: 3%;
+}
+
+.logo {
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	display: inline-block;
+	margin-bottom: -20px;
+	position: relative;
+}
+
+h1 {
+	display: inline-block;
+	line-height: 50%
 }
