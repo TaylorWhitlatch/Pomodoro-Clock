@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<!-- JAVASCRIPT -->
-  <script type="text/javascript" src="js/scripts.js"></script>
+  <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
   
 </head>
 <body>
@@ -48,24 +48,38 @@
             <div class="col-xs-6 work">
               <div class="col-xs-12 work-time">
                 Work Time (min)</div>
+<<<<<<< HEAD
               <div class="btn-group work-interval-form">
                     <div class="btn btn-default btn-lg" onclick="deductWorkTime()">-</div>
                     <div class="btn btn-lg minutes">25</div>
                     <div class="btn btn-default btn-lg" onclick="addWorkTime()">+</div>
                 </div>
                 
+=======
+              <div class="btn-group">
+                    <div class="btn btn-default btn-lg" onclick="deductWorkTime()">-</div>
+                    <div class="btn btn-lg minutes-interval">25</div>
+                    <div class="btn btn-default btn-lg" onclick="addWorkTime()">+</div>
+                </div>
+>>>>>>> ba8667c8ceead6883a649a46c7adab070992300f
             </div>
     
 
             <div class="col-xs-6">
-
-              <div class="col-xs-12 play">Play Time (min)
+              <div class="col-xs-12 play">Play Time (min)</div>
+              <div class="btn-group">
+                    <div class="btn btn-default btn-lg" onclick="deductPlayTime()">-</div>
+                    <div class="btn btn-lg" id="playTimer">5</div>
+                    <div class="btn btn-default btn-lg" onclick="addPlayTime()">+</div>
               </div>
+<<<<<<< HEAD
            <div class="btn-group col-xs-12 break-interval-form">
                     <div class="btn btn-default btn-lg" onclick="deductPlayTime()">-</div>
                     <div class="btn btn-lg" id="playTimer">5</div>
                     <div class="btn btn-default btn-lg" onclick="addPlayTime()">+</div>
               </div>
+=======
+>>>>>>> ba8667c8ceead6883a649a46c7adab070992300f
            </div>
         </div>
 
@@ -82,7 +96,7 @@
 
 <div class="jumbotron text-center">
   <div class="display-3 time time-box">
-    <div class="minutes time">00</div>
+    <div class="minutes time">25</div>
     <div class="colon time">:</div>
     <div class="seconds time">00</div>
 
@@ -187,17 +201,13 @@
     <div class="item">
       <div id="gameContainer" data-name="Classic Solitaire" data-type="html5" data-url="https://cdn.htmlgames.com/ClassicSolitaire/index.html" data-size="800x480" data-fixedsize="true" class="car-item">
               <iframe id="gameFrame" src="https://cdn.htmlgames.com/ClassicSolitaire/index.html?bgcolor=%232e3338" scrolling="no" frameborder="0" allowfullscreen="true" style="width: 640px; height:480px; display: block;"></iframe></div>
+      <div class="carousel-caption">
+        ...
       
-    </div>
-    <div class="item">
-      <iframe width="640" height="480" frameborder="0" allowfulscreen class="car-item" src="https://www.espn.com"></iframe>
+      </div>
+
 
     </div>
-
-    <!--  <div class="item">
-      <iframe width="640" height="480" frameborder="0" allowfulscreen class="car-item" src="https://www.yelp.com"></iframe>
-
-    </div> -->
    </div> 
   </div>
 
@@ -217,10 +227,7 @@
 
 <!-- ******************************************************************* -->
 
-
-
-
 	</div>
-
 </body>
+<script type="text/javascript" src="js/countdowntimermod.js"></script>
 </html>

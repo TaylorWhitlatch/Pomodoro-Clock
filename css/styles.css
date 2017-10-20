@@ -1,7 +1,12 @@
 body {
+
+	background: url('../images/background2.jpg');
+	background-size: cover;
+
 	background: url('../images/background3.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+
 }
 
 	
@@ -14,8 +19,10 @@ body {
 	1px 1px 0 #000; 
 
 	/* border: 2px solid #F0EAD6;  */
+
 	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
 a:hover { 

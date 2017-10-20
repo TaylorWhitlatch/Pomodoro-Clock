@@ -1,20 +1,50 @@
-function userInput(){
-  var userWork = document.getElementsByClassName('work-interval-form')[0].value;
-  var userBreak = document.getElementsByClassName('break-interval-form')[0].value;
-  console.log(userWork);
- 
-  timerWork(userWork)
-  $('#break').hide();
+
+console.log("test")
+var workLength = 25;
+var playLength = 5;
+var alarm = new Audio('http://www.orangefreesounds.com/wp-content/uploads/2016/06/Ringing-clock.mp3?_=1');
+var loop = 0;
+var clicks = 0;
 
 
 
+function addWorkTime(){//to add time to work session
+  workLength += 5;
+  $('.minutes').text(workLength);
+  $('.minutes-interval').text(workLength);
+}
+
+function deductWorkTime(){//to deduct session time
+  if (workLength > 5){
+    workLength -= 5 //logic to prevent going below 5 on time scale.
+  }else{
+    workLength = 5;
   }
+  $('.minutes').text(workLength);
+  $('.minutes-interval').text(workLength);
+}
 
 
+function addPlayTime(){
+  playLength += 5;
+  $("#playTimer").text(playLength);
+}
 
-  
+function deductPlayTime(){
+  if (playLength > 5){
+    playLength -= 5
+  }else{
+    playLength = 5
+  }
+  $("#playTimer").text(playLength);
+}
 
 
+function userInput(){
+  console.log(workLength);
+  timerWork(workLength)
+  $('#break').hide();
+}
 
 
 function timerWork(limit){
@@ -43,9 +73,8 @@ function timerWork(limit){
         // return minutes;
         $('#reset').attr('disabled', false);
         $('#break').show();
-        var userBreak = document.getElementsByClassName('break-interval-form')[0].value;
 
-        timerBreak(userBreak);
+        timerBreak(playLength);
       }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
   document.getElementsByClassName('seconds')[0].style.fontSize = "125px";
@@ -74,8 +103,7 @@ function timerWork(limit){
     }else{
         clearInterval(interval);
         // return minutes;
-        var userWork = document.getElementsByClassName('work-interval-form')[0].value;
-        timerWork(userWork);
+        timerWork(workLength);
         $('#break').hide();
       }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
@@ -102,8 +130,7 @@ function timerWork(limit){
 
 
 function reset(){
-var userWork = Number(document.getElementsByClassName('work-interval-form')[0].value);
-  document.getElementsByClassName('minutes')[0].innerHTML = userWork.toLocaleString(undefined,{minimumIntegerDigits: 2});
+  document.getElementsByClassName('minutes')[0].innerHTML = workLength.toLocaleString(undefined,{minimumIntegerDigits: 2});
   document.getElementsByClassName('seconds')[0].innerHTML = '00';
     $('#start').show();
 
