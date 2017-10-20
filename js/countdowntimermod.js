@@ -2,23 +2,15 @@ function userInput(){
   var userWork = document.getElementsByClassName('work-interval-form')[0].value;
   var userBreak = document.getElementsByClassName('break-interval-form')[0].value;
   console.log(userWork);
-  // if (userWork == ''){
-  //   document.getElementsByClassName("work-interval-form")[0].value = "Required!!!";
-  //   document.getElementsByClassName("work-interval-form")[0].style.color = "red";
-  //   console.log(userWork);   
-  //   return false; 
-  // }else if (userBreak == ''){
-  //   document.getElementsByClassName("work-interval-form")[0].style.color = "green";
-  //   document.getElementsByClassName("break-interval-form")[0].value = "Required!!!";
-  //   document.getElementsByClassName("break-interval-form")[0].style.color = "red";
-  //   // console.log(userBreak); 
-  //   return false;    
-  // }else{
-  //   document.getElementsByClassName("work-interval-form")[0].style.color = "green";
-  //   document.getElementsByClassName("break-interval-form")[0].style.color = "green";
-   // } 
+ 
   timerWork(userWork)
-}
+  $('#break').hide();
+
+
+
+  }
+
+
 
   
 
@@ -27,7 +19,6 @@ function userInput(){
 
 function timerWork(limit){
   $('#start').hide();
-  $('#breaktime').attr('disabled', true);
   $('#reset').attr('disabled', true);
   var seconds = 60 //0;
   var minutes = limit - 1;//0;
@@ -51,6 +42,10 @@ function timerWork(limit){
         clearInterval(interval);
         // return minutes;
         $('#reset').attr('disabled', false);
+        $('#break').show();
+        var userBreak = document.getElementsByClassName('break-interval-form')[0].value;
+
+        timerBreak(userBreak);
       }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
   document.getElementsByClassName('seconds')[0].style.fontSize = "125px";
@@ -79,21 +74,29 @@ function timerWork(limit){
     }else{
         clearInterval(interval);
         // return minutes;
+        var userWork = document.getElementsByClassName('work-interval-form')[0].value;
+        timerWork(userWork);
+        $('#break').hide();
       }
   document.getElementsByClassName('minutes')[0].style.fontSize = "125px";
   document.getElementsByClassName('seconds')[0].style.fontSize = "125px";
   document.getElementsByClassName('minutes')[0].innerHTML = minutes.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;
   document.getElementsByClassName('seconds')[0].innerHTML = seconds.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;;
   console.log(minutes, seconds);
-  }, 100)
+  }, 50)
+
+    $('#stop').click(function(){
+      minutes;
+      
+    });
 
  };
 
- function stop(){
+ // function stop(){
 
-    clearInterval();
+  
 
-  };
+ //  };
 
 
 
@@ -106,6 +109,10 @@ var userWork = Number(document.getElementsByClassName('work-interval-form')[0].v
 
 }
 
+
+$(document).ready(function(){
+
+
 $("#a1").click(function(e){
     e.preventDefault();
     var value = $("#b1").val();
@@ -116,6 +123,7 @@ $("#a1").click(function(e){
 $("#c1").click(function(e){
     e.preventDefault();
     document.getElementById('b1').value = "TASK 1 DONE";
+    document.getElementById('current1').innerHTML = "TASK 1 DONE"; 
 
 })
 
@@ -146,4 +154,4 @@ $("#c3").click(function(e){
 })
 
 
-
+});
