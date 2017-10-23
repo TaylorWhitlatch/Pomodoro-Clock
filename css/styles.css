@@ -71,7 +71,7 @@ body {
 	font-size: 16px;
 	display: inline-block;
 	line-height: 50%;
-	margin-top: 0;
+	margin-top: 12px;
 /*    text-shadow:
     -1px -1px 0 #000,
 	1px 1px 0 #000;  */
@@ -82,7 +82,7 @@ body {
 	color: grey;
 	margin-top: 12px;
 	text-shadow: none;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	font-size: 15px;
 }
 
@@ -252,9 +252,9 @@ element.style {
         z-index: 6;
 	}
 
-.clear{
+/*.clear{
 		clear:both;
-}
+}*/
 
 /*sizing image of chuck norris*/
 .back img{
