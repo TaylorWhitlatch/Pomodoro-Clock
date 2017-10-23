@@ -1,211 +1,135 @@
-body {
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catch-Up! | Productivity Timer</title>
 
-	background-color: #1d63bd;
-	background-size: cover;
+	<!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	background: url('../images/background3.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-
-}
-
+  <!--JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	
-.jumbotron {
-	background-color:#b70b19;
-	background: url('../images/background.jpg');
-	color: #F0EAD6;
-	    text-shadow:
-    -1px -1px 0 #000,
-	1px 1px 0 #000; 
+  <!-- BOOTSTRAP JAVASCRIPT PLUGIN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/countdowntimermod.js"></script>
 
-	/* border: 2px solid #F0EAD6;  */
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/ticker.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-	background-repeat: no-repeat;
-	background-size: cover;
+	<!-- JAVASCRIPT -->
+  <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+  
+</head>
+<body>
 
-}
+	<div class="container">
 
-a:hover { 
-	text-decoration: underline 
-}
+    <!-- BEGIN JUMBOTRON -->
+		<div class="jumbotron main-heading jumbotron-fluid text-center">
 
-a { 
-	color: #F0EAD6; 
-	text-decoration: none; 
-}
+      <div class="container">
 
-.title-text {
-	font-family: 'Flamante';
-    color: #F0EAD6;
-    text-shadow:
-    -1px -1px 0 #000,
-	1px 1px 0 #000;  
-}
+        <!-- Catch-Up! HEADER -->
+        <div class = "row title-logo">
+        <div class="logo"></div>  
+        
+          <h1 class="display-3 title title-text">Catch-Up!</h1>
+        </div>
 
-p {
-	font-family: sans-serif;
-}
+        <!-- SUMMARY -->
+        <div id="slideToggle">
+        <p class="lead" >A timer based on the Pomodoro Technique</p>
+        </div>
+        <div class="clear">
+        <br/>
+          <div class="slideTogglebox">
+            <center>
+              <p><h2 style="color: white; font-size: 19px;">The Pomodoro Technique</h2> 
+                <br>a method that can "help anyone to focus."</p>
+            </center>
+            <!--     <p><h2 style="color: white; font-size: 17px;">Instructions:</h2></p> -->
+            <br>
+            <ol>
+                <li>Choose a task to be accomplished.</li>
+                <li>Set the time on appropriate field for Work and Break (25min work and 5 min break are the defaults).</li>
+                <li>Work on the task until work session is over.</li>
+                <li>Take a short break (Rest timer will notify when it's over).</li>
+                <li>Every 4 Pomodoros take a longer break (30 min).</li>
+            </ol>
+          </div>
 
-@font-face {
-	font-family: 'Flamante';
-	src: url('../fonts/Flamante/Flamante-Serif-FFP.ttf');
-	font-weight: 500;
-}
+        </div>
+        <div class="steps col-xs-12">
+          <div class="col-xs-12 header-box-right">
+            <div class="col-xs-6 work">
+              <div><h3 class="col-xs-12 work-time">Work Time (min)</h3></div>
+              <div class="btn-group col-xs-offset-3">
+                    <div class="btn btn-default btn-lg" id="work-minus">-</div>
+                    <div style = "text-decoration: none; color: grey; cursor: default;" class="btn btn-lg minutes-interval">25</div>
+                    <div class="btn btn-default btn-lg" id="work-plus">+</div>
+                </div>
+            </div>
+    
 
-.lead {
-	margin-top: 20px;
-	font-family: sans-serif;
-	text-shadow: none;
-}
+            <div class="col-xs-6">
+              <div><h3 class="col-xs-12 play">Play Time (min)</h3></div>
+              <div class="btn-group col-xs-12 col-xs-offset-0">
+                    <div class="btn btn-default btn-lg" id="play-minus">-</div>
+                    <div style = "text-decoration: none; color: grey; cursor: default;" class="btn btn-lg" id="playTimer">05</div>
+                    <div class="btn btn-default btn-lg" id="play-plus">+</div>
+              </div>
+           </div>
+        </div>
 
-.main-heading {
-	margin-top: -40px;
-	margin-bottom: 20px;
-}
+      </div> <!-- end of Tasks and Work/Play Time -->
 
-#time {
-	color: white;
-	height: 200px;
-	width: 300px;
-}
-
-.steps {
-/* 	background-color: #F0EAD6; */
-	color: #F0EAD6;
-	text-shadow: none;
-	/* background-color: #F0EAD6; */
-	padding-bottom: 5px;
-	padding-top: 5px;
-}
-
-#header-center {
-	border: none;
-}
-
-.time {
-	display: inline-block;
-}
-
-.colon {
-	font-size: 125px;
-}
-
-.task-button {
-	background-color: dimgray;
-	margin-top: 1%
-	
-}
-
-.task-form {
-	width: 60%;
-}
-
-.time {
-	font-size: 125px;
-	/* text-shadow:
-		-1px -1px 0 #000,
-		1px 1px 0 #000; 
-		1
-text-shadow: 6px 6px 0px rgba(240,234,214,0.2); */
-
-  text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-}
-
-		
-		
-}
-
-.jumbo-box {
-	bottom: 0px;
-	
-
-}
-
-.header-box-left {
-	
-
-}
-
-.btn {
-	border-radius: 30px;
-	border: 1px solid #F0EAD6;
-	box-shadow: 2px 2px 2px 1px black;
-}
-
-.time-box {
-	/* border: 2px solid #F0EAD6; */
-	padding: 0px 10px;
-}
-
-.work {
-	/* border-right: 1px solid black; */
-
-}
-
-.btn-break {
-	font-size: 20px;
-}
-
-.car-item {
-	margin-left: 15%;
-
-}
-
-.btn-remove {
-	float: right;
-	font-size: 12px;
-	
-	margin: 0px 5px;
-}
+      </div> <!-- end of CONTAINER -->
 
 
+    </div> <!-- end of JUMBOTRON -->
 
-.break-interval-form {
-	
-	float: left;
-	margin-left: -4%
+<div class="jumbotron text-center">
+  <div class="text-center"><h2 id="current-session">Work Session</h2></div>
+  <div class="flip-container">
+    <div class="flipper">
+      
+          <div class="display-3 time time-box front">
+            <div class="minutes time">25</div>
+            <div class="colon time">:</div>
+            <div class="seconds time">00</div>
+          </div>
+          <!-- behind clock -->
+          <div class="display-3 back">
+            <!-- <img src="images/chucknorris.jpg"/> version for chuck jokes -->
+            <div class="minutes time">25</div>
+            <div class="colon time">:</div>
+            <div class="seconds time">00</div>
+          </div>
+    </div>
+  </div>
+  <!-- <button id="myCard">rotate card</button> test button to flip the card  -->
+ 
+<hr />
+  <div class="buttons">
+    <button class="btn btn-danger btn-lg" href="#" id="start" onclick="startTimer()">Start
+ </button>
+  <!-- <button class="btn btn-primary btn-lg" href="#" id="pause" onclick="pause()">Pause -->
+ <!-- </button> -->
+ <button class="btn btn-lg" href="#" id="reset" onclick="reset()">Reset
+ </button>
+</div>
+  <hr class="my-4">
+  <footer>
+  <div>&copy; 2017 | <a href="https://github.com/niktechnopro/Pomodoro-Clock">Focus! Team</a> Jennifer, Nick, Zach, Saiph,  Taylor <!-- for class project by <span id="team">Focus! Team</span></div>
+          <div id="teamTogglebox">
+            Focus! Team: Jennifer, Nick, Zach, Saiph, Taylor -->
+          </div>
+</footer>
+</div>
+</div>
 
-}
-
-.work-interval-form{
-	float: right;
-	margin-right: -1%;
-}
-
-.play {
-	text-align: left;
-
-
-	
-}
-
-.work-time {
-	text-align: right;
-	
-}
-
-.logo {
-	height: 100px;
-	width: 100px;
-	background-color: white;
-	display: inline-block;
-	margin-bottom: -20px;
-	position: relative;
-}
-
-h1 {
-	display: inline-block;
-	line-height: 50%
-}
-
+<!-- ******************************************************************* -->
+</body>
+<script type="text/javascript" src="js/countdowntimermodnik1.js"></script>
+</html>
