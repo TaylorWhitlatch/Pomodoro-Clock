@@ -1,10 +1,10 @@
 body {
 
-	background: url('../images/background2.jpg');
-/*	background-color: #5A0000;*/
+/*	background: url('../images/background2.jpg');*/
+background-color: #5A0000;
 	background-size: cover;
 
-	/*background: url('../images/background3.jpg');*/
+/*	background: url('../images/background3.jpg');*/
 	/*background-color: lightgrey;*/
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -22,9 +22,10 @@ body {
 .jumbotron {
 /*	background-color:#ED5D40;*/
 /*	background: url('../images/background4.jpg');*/
+	background: url('../images/grey-background-facebook-3.svg');
 	background-color: white;
 
-	color: #808080;
+	color: black;
 	
 /*	text-shadow:
     -1px -1px 0 #000,
@@ -46,9 +47,9 @@ body {
 	display: inline-block;
 	line-height: 50%;
 	margin-top: 20px;
-/*  text-shadow:
-    -1px -1px 0 #5A0000,
-	1px 1px 0 #5A0000; */
+  text-shadow:
+    -1px -1px 0 white,
+	1px 1px 0 white; 
 }
 
 .jumbotron h2 {
@@ -67,7 +68,7 @@ body {
 .jumbotron h3 {
 	/*Overrides jumbotron's h2*/
 	font-family: 'Flamante';
-	color: grey; 
+	color: black; 
 	font-size: 16px;
 	display: inline-block;
 	line-height: 50%;
@@ -79,7 +80,7 @@ body {
 
 .jumbotron p {
 	font-family: sans-serif;
-	color: grey;
+	color: black;
 	margin-top: 12px;
 	text-shadow: none;
 	margin-bottom: 5px;
