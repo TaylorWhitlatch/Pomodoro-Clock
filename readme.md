@@ -20,9 +20,9 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
   	* **Key code portions**: JavaScript 
 
 * **[Zach Dunn](https://github.com/ZachDunn8)**: 
-	* **Primary team role**: text text text
-  	* **Contributions**:  Spotify widget 
-  	* **Key code portions**: JavaScript
+	* **Primary team role**: API research/music player
+  	* **Contributions**:  YouTube widget, assisted with timer and APIs 
+  	* **Key code portions**: JavaScript and HTML
 
 * **[Jennifer Menze](https://github.com/jamenze)**: 
   	* **Primary team role**: Prototype, Styling
