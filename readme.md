@@ -1,9 +1,18 @@
 ![](/images/new_logo.png)
 
 ## Overview of Project:
-Catch-Up! is a website designed with busy professionals in mind. By entering your tasks, work time, and break time you can use Catch-Up! to create a custom timer that will maximize your effectiveness and time management skills. 
+"Catch-Up!"" is a website designed with busy professionals in mind. By entering your tasks, work time, and break time you can use "Catch-Up!"" to create a custom timer that will maximize your effectiveness and time management skills. 
 
 There are only so many hours in a day! Let Catch-Up! help out. :tomato: 
+
+## Project Background:
+"Catch-Up!" is based on the "Pomodoro Technique" which was developed by Francesco Cirillo in the late 1980s. The technique is based upon six underlying principles.
+* **Decide on a task to be done**
+* **Set the pomodoro timer (traditionally to 25 minutes)**
+* **Work on the task**
+* **End work when the timer rings and put a checkmark on a piece of paper**
+* **If you have fewer than four checkmarks, take a short break (3-5 minutes) then go to step 2**
+* **After four pomodoros, take a longer break (15-30 minutes), reset your checkmark count to zero, then go to step 1**
 
 ## The Team:
 * **[Nikolajs Bogucharsky](https://github.com/niktechnopro)**: 
