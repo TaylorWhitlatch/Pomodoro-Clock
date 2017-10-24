@@ -30,16 +30,16 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
   	* **Key code portions**: Website wireframe, README file, Some HTML, CSS, and jQuery
 
 ## Programming Languages used:
-	* HTML
-	* CSS
-	* JavaScript
-	* jQuery
+	** HTML
+	** CSS
+	** JavaScript
+	** jQuery
 
 ## MVP (Minimum Viable Product):
-	* Customizable timer based on user's input of work and play time.
-	* Timer display that begins countdown based upon user's input.
-	* Timer display includes Start, Pause, and Reset buttons.
-	* Website layout is clean and easy to navigate.
+	** Customizable timer based on user's input of work and play time.
+	** Timer display that begins countdown based upon user's input.
+	** Timer display includes Start, Pause, and Reset buttons.
+	** Website layout is clean and easy to navigate.
 
 
 ## Code Snippets:
