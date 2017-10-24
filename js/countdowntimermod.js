@@ -76,7 +76,7 @@ function timerWork(limit,secs){
       $('#reset').show();
       // return minutes
       // return seconds
-      console.log(document.getElementsByClassName('minutes time')[0].value);
+      console.log(document.getElementsByClassName('minutes')[0].value);
       var xx = document.getElementsByClassName('minutes')[0].value;
       var yy = document.getElementsByClassName('seconds')[0].value;
       
