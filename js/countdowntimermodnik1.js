@@ -125,6 +125,8 @@ function countDown(minutes,seconds) {
             $('#current-session').text('Work Session');
         }
           alarm.play();
+          $('.logo').effect( "bounce", { times: 3 }, "slow" );
+          
       //var timeOut = setTimeout(explode, 2000);
       countDown(time,0); // recursive timer call
       } else if (seconds != 0) {
