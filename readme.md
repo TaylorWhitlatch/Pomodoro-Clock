@@ -1,5 +1,3 @@
-![](/images/new_logo.png)
-
 ## Overview of Project:
 "Catch-Up!"" is a website designed with busy professionals in mind. By entering your tasks, work time, and break time you can use "Catch-Up!"" to create a custom timer that will maximize your effectiveness and time management skills. 
 
@@ -14,7 +12,7 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
 * **If you have fewer than four checkmarks, take a short break (3-5 minutes) then go to step 2**
 * **After four pomodoros, take a longer break (15-30 minutes), reset your checkmark count to zero, then go to step 1**
 
-## The Team:
+## The Focus! Team:
 * **[Nikolajs Bogucharsky](https://github.com/niktechnopro)**: 
 	* **Primary team role**: text text text
   	* **Contributions**:  text text text 
@@ -52,16 +50,8 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
 * Timer display includes Start, Pause, and Reset buttons.
 * Website layout is clean and easy to navigate.
 
-
-## Code Snippets:
-```javascript
-$(function(){
-  $('div').html('I am a div.');
-});
-```
-
 ## Project Screenshots:
-![alt text](https://i.pinimg.com/736x/02/a7/8a/02a78a1d9c8a6c94ecb633f7cfe6b849--smile-funny-stuff.jpg "Not the real image | do not use")
+![alt text](/images/screenshot1.png "project screenshot")
 
 ## 3 Contributions We’d Like to See:
 1. Incorporate periodic displays of encouraging quotes and messages to inspire the user to keep working hard!
