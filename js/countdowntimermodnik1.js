@@ -12,10 +12,10 @@ $('#reset').hide(); //leaves only start button on start
 // });
 
 
-
-  // $('.logo').toggle( "bounce", { times: 3 }, "slow" );
-
-
+// Make Logo bounce upon click
+$('.logo').click(function(){
+  $('.logo').effect( "bounce", { times: 3 }, "slow" );
+});
 
 
 //sliding intructions start
