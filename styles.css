@@ -344,97 +344,10 @@ element.style {
 }
 
 #slideToggle:hover {
-	text-decoration: blue;
 	cursor: pointer;
-
 }
 
-/*sizing image of chuck norris*/
-.back img{
-	width:450px;
-	
-}
-/*flip effect start*/
-.flip-container{
-	perspective: 1000px;
-	/*border: 5px solid green;*/
-	/*transform: rotateY(180deg);*/
-}
-/*
-.flip-container:hover .flipper{
-	transform:rotateY(180deg);
-}*/
 
-.flip-container .front .back{
-	width: 500px;
-	margin: 0 auto;
-}
-
-.flipper{
-	position: relative;
-/*    specifies how long transition would take*/
-	-webkit-transition: all 1s;
-/*    the transform-style property specifies how nested elements are rendered in 3D space.(flat - do not preserve, preserve-3d - will preserve*/
-    transform-style: preserve-3d;
-}
-
-.front, .back{
-	position: relative;
-	backface-visibility: hidden;
-	}
-
-.front{
-	transform: rotateX(0deg);
-	z-index: 2;
-}
-
-.back{
-	margin-top: -177px;
-	transform: rotateX(180deg);
-}
-/*helper class to add to flipper to make fields flip from JS*/
-.flip{
-	transform:rotateX(180deg); 
-}
-/*flip effect end*/
-
-/*resizing chucks picture*/
-#chuck-picture{
-	width: 450px;
-}
-
-#they-say{
-	display: inline-block;
-	position: absolute;
-    font-size: 24px;
-    margin: 5px 20px;
-	/*reduces space between the lines*/
-    line-height: 105%;
-}
-
-.modal-content{
-	background-color: lightgreen;
-}
-/*invisible test button shows up while howering over div with $nbsp*/
-/*look for ghost button in top left corner*/
-#manual, #box{ 
-	position:absolute;
-	top: 10px;
-}
-
-#manual{
-	display:none;
-}
-
-#box:hover #manual{
-	display:block;
-}
-/*invisible test button shows up while howering over div with $nbsp*/
-
-.open-window{
-/*	width: 40%;
-*/	height:25%;
-}
 
 
 

@@ -6,6 +6,8 @@ var alarm = new Audio('http://www.orangefreesounds.com/wp-content/uploads/2016/0
 var loop = 0;
 var clicks = 0;
 
+$('#stop').hide();
+$('#resume').hide();
 
 
 function addWorkTime(){//to add time to work session
@@ -55,11 +57,38 @@ function stopAudio(audio) {
 
 //then using it:
 
-function timerWork(limit){
+function timerWork(limit,secs){
   $('#start').hide();
-  $('#reset').attr('disabled', true);
+  // $('#reset').hide();
+  $('#stop').show();
+
+  // $('#reset').attr('disabled', true);
   var seconds = 60 //0;
   var minutes = limit - 1;//0;
+ 
+
+ $('#stop').click(function(){
+      console.log("supppp");
+      clearInterval(interval);
+      console.log(minutes,seconds);
+      $('#stop').hide();
+      $('#resume').show();
+      $('#reset').show();
+      // return minutes
+      // return seconds
+      console.log(document.getElementsByClassName('minutes time')[0].value);
+      var xx = document.getElementsByClassName('minutes')[0].value;
+      var yy = document.getElementsByClassName('seconds')[0].value;
+      
+      $('#resume').click(function(){
+     
+      console.log("REEEEEEMIX");
+      $('#resume').hide();
+
+      timerWork(xx,yy);
+ })
+    });
+
  
 
   var interval = setInterval(function(){
@@ -71,7 +100,8 @@ function timerWork(limit){
     }else if (seconds === 0 && minutes === 0){
         clearInterval(interval);
         // return minutes;
-        $('#reset').attr('disabled', false);
+        // $('#reset').attr('disabled', false);
+        $('#reset').show();
         $('#break').show();
 
         timerBreak(playLength);
@@ -81,7 +111,7 @@ function timerWork(limit){
   document.getElementsByClassName('minutes')[0].innerHTML = minutes.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;
   document.getElementsByClassName('seconds')[0].innerHTML = seconds.toLocaleString(undefined,{minimumIntegerDigits: 2});//converts the seconds to double digits;;
   console.log(minutes, seconds);
-  }, 20)
+  }, 500)
 
   
   // $('#break').show();
@@ -129,11 +159,11 @@ function timerWork(limit){
   
  };
 
- // function stop(){
+ function stop(){
 
   
 
- //  };
+  };
 
 
 
