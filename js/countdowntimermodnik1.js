@@ -11,6 +11,13 @@ $('#reset').hide(); //leaves only start button on start
 //     $(".flipper").toggleClass("flip");
 // });
 
+
+
+  // $('.logo').toggle( "bounce", { times: 3 }, "slow" );
+
+
+
+
 //sliding intructions start
 $('.slideTogglebox').hide();
 $('#slideToggle').mouseover(function(){

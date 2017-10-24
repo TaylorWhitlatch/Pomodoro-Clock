@@ -26,6 +26,7 @@
 </head>
 <body>
 
+  <!-- Begin top container -->
   <div class="container">
 
     <!-- BEGIN JUMBOTRON -->
@@ -44,6 +45,7 @@
         <div id="slideToggle">
         <p class="lead" >A timer based on the Pomodoro Technique</p>
         </div>
+
         <div class="clear">
         <br/>
             <div class="slideTogglebox">
@@ -51,22 +53,17 @@
                 <p><h2 style="color: white; font-size: 19px;">The Pomodoro Technique</h2> 
                   <br>a method that can "help anyone to focus."</p>
               </center>
-              <!--     <p><h2 style="color: white; font-size: 17px;">Instructions:</h2></p> -->
               <br>
-              <ol>
-                  <li>Choose a task to be accomplished.</li>
-                  <li>Set the time on appropriate field for Work and Break (25min work and 5 min break are the defaults).</li>
-                  <li>Work on the task until work session is over.</li>
-                  <li>Take a short break (Rest timer will notify when it's over).</li>
-                  <li>Every 4 Pomodoros take a longer break (30 min).</li>
-              </ol>
-            </div>
+                <ol>
+                    <li>Choose a task to be accomplished.</li>
+                    <li>Set the time on appropriate field for Work and Break (25min work and 5 min break are the defaults).</li>
+                    <li>Work on the task until work session is over.</li>
+                    <li>Take a short break (Rest timer will notify when it's over).</li>
+                    <li>Every 4 Pomodoros take a longer break (30 min).</li>
+                </ol>
+            </div> <!-- end slideTogglebox -->
 
-
-
-            
-
-        </div>
+          </div> <!-- end class "clear" -->
 
 
         <div class="steps col-xs-12">
@@ -91,62 +88,70 @@
            </div>
         </div>
 
-      </div> <!-- end of Tasks and Work/Play Time -->
+      </div> <!-- end of Tasks and Work/Play Time / steps col-xs-12 -->
 
       </div> <!-- end of CONTAINER -->
 
 
     </div> <!-- end of JUMBOTRON -->
 
-<div class="jumbotron text-center">
-  <div class="text-center"><h2 id="current-session">Work Session</h2></div>
-  <div class="flip-container">
-    <div class="flipper">
-      
-          <div class="display-3 time time-box front">
-            <div class="minutes time">25</div>
-            <div class="colon time">:</div>
-            <div class="seconds time">00</div>
-          </div>
-          <!-- behind clock -->
-          <div class="display-3 back">
-            <!-- <img src="images/chucknorris.jpg"/> version for chuck jokes -->
-            <div class="minutes time">25</div>
-            <div class="colon time">:</div>
-            <div class="seconds time">00</div>
-          </div>
-    </div>
-  </div>
-  <!-- <button id="myCard">rotate card</button> test button to flip the card  -->
- 
-<hr />
-  <div class="buttons">
-    <button class="btn btn-danger btn-lg" href="#" id="start" onclick="startTimer()">Start
- </button>
-  <!-- <button class="btn btn-primary btn-lg" href="#" id="pause" onclick="pause()">Pause -->
- <!-- </button> -->
- <button class="btn btn-lg" href="#" id="reset" onclick="reset()">Reset
- </button>
 
-</div>
-
-  <hr class="my-4">
-  <footer>
-    <br>
-        <div>
-        <iframe class="video" width="400" height="34" src="https://www.youtube.com/embed/Rb0UmrCXxVA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-      </div> 
-      <br>
-  <div>&copy; 2017 | <a href="https://github.com/niktechnopro/Pomodoro-Clock">Focus! Team</a> Jennifer, Nick, Zach, Saiph,  Taylor <!-- for class project by <span id="team">Focus! Team</span></div>
-          <div id="teamTogglebox">
-            Focus! Team: Jennifer, Nick, Zach, Saiph, Taylor -->
+      <!-- Begin second jumbotron -->
+      <div class="jumbotron text-center">
+        <div class="text-center"><h2 id="current-session">Work Session</h2></div>
+        <div class="flip-container">
+          <div class="flipper">
+            
+                <div class="display-3 time time-box front">
+                  <div class="minutes time">25</div>
+                  <div class="colon time">:</div>
+                  <div class="seconds time">00</div>
+                </div>
+                <!-- behind clock -->
+                <div class="display-3 back">
+                  <!-- <img src="images/chucknorris.jpg"/> version for chuck jokes -->
+                  <div class="minutes time">25</div>
+                  <div class="colon time">:</div>
+                  <div class="seconds time">00</div>
+                </div>
           </div>
+        </div>
+        <!-- <button id="myCard">rotate card</button> test button to flip the card  -->
+       
+        <hr />
 
-</footer>
-</div>
-</div>
+        <div class="buttons">
+          <button class="btn btn-danger btn-lg" href="#" id="start" onclick="startTimer()">Start
+          </button>
+          <!-- <button class="btn btn-primary btn-lg" href="#" id="pause" onclick="pause()">Pause -->
+          <!-- </button> -->
+          <button class="btn btn-lg" href="#" id="reset" onclick="reset()">Reset
+          </button>
+        </div> <!-- end of class buttons -->
+
+        <hr />
+
+        <footer>
+        <br>
+          <div>
+          <!-- music player:   -->
+          <iframe class="video" width="400" height="34" src="https://www.youtube.com/embed/Rb0UmrCXxVA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div> 
+          <br>
+          <div>&copy; 2017 | <a href="https://github.com/niktechnopro/Pomodoro-Clock">Focus! Team</a> Jennifer, Nick, Zach, Saiph,  Taylor <!-- for class project by <span id="team">Focus! Team</span></div>
+            <div id="teamTogglebox">
+              Focus! Team: Jennifer, Nick, Zach, Saiph, Taylor -->
+            </div>
+        </footer> <!-- end of footer -->
+
+      </div> <!-- End second jumbotron -->
+  </div> <!-- End of top container -->
 
 <!-- ******************************************************************* -->
 </body>
 <script type="text/javascript" src="js/countdowntimermodnik1.js"></script>
+
+
+
+
 </html>

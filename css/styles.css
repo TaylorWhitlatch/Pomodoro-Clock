@@ -12,6 +12,28 @@ background-color: #5A0000;
 
 }
 
+@keyframes bounce {
+   
+}
+
+0% {
+	transform:translateY(-100%);
+	opacity: 0;
+}
+
+5% {
+  	transform:translateY(-100%);
+    opacity: 0;
+}
+
+15% {
+  transform:translateY(0);
+  padding-bottom: 5px;
+}
+
+
+
+
 @font-face {
 	font-family: 'Flamante';
 	src: url('../fonts/Flamante/Flamante-Serif-FFP.ttf');
