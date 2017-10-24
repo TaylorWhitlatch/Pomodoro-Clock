@@ -1,3 +1,5 @@
+[[images/new_logo.png]]
+
 ## Overview of Project:
 Catch-Up! is a website designed with busy professionals in mind. By entering your tasks, work time, and break time you can use Catch-Up! to create a custom timer that will maximize your effectiveness and time management skills. 
 
@@ -25,21 +27,21 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
   	* **Key code portions**: JavaScript and HTML
 
 * **[Jennifer Menze](https://github.com/jamenze)**: 
-  	* **Primary team role**: Design Strategy, Prototype
-  	* **Contributions**:  Website name, layout, and technical writing. Assisted with implementing design.
-  	* **Key code portions**: Website wireframe, README file, Some HTML, CSS, and jQuery
+  	* **Primary team role**: Design Strategy
+  	* **Contributions**:  Website name, logo, wireframe, and technical writing. 
+  	* **Key code portions**: README file, Some HTML, CSS, and jQuery
 
 ## Programming Languages used:
-	* HTML
-	* CSS
-	* JavaScript
-	* jQuery
+* HTML
+* CSS
+* JavaScript
+* jQuery
 
 ## MVP (Minimum Viable Product):
-	** Customizable timer based on user's input of work and play time.
-	** Timer display that begins countdown based upon user's input.
-	** Timer display includes Start, Pause, and Reset buttons.
-	** Website layout is clean and easy to navigate.
+* Customizable timer based on user's input of work and play time.
+* Timer display that begins countdown based upon user's input.
+* Timer display includes Start, Pause, and Reset buttons.
+* Website layout is clean and easy to navigate.
 
 
 ## Code Snippets:
