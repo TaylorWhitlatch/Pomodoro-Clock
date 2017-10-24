@@ -25,18 +25,11 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
   	* **Key code portions**: JavaScript and HTML
 
 * **[Jennifer Menze](https://github.com/jamenze)**: 
-  	* **Primary team role**: Prototype, Styling
+  	* **Primary team role**: Design Strategy, Prototype
   	* **Contributions**:  Website name, layout, and technical writing. Assisted with implementing design.
-  	* **Key code portions**: Website wireframe, README file, Some HTML and CSS
+  	* **Key code portions**: Website wireframe, README file, Some HTML, CSS, and jQuery
 
-
-## Technologies, Frameworks, and Programming Languages used:
-* **Technologies**:
-
-* **Frameworks**:
-
-
-* **Programming Languages**:
+## Programming Languages used:
 	* HTML
 	* CSS
 	* JavaScript
