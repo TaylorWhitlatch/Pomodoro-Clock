@@ -32,7 +32,7 @@ There are only so many hours in a day! Let Catch-Up! help out. :tomato:
 
 * **[Zach Dunn](https://github.com/ZachDunn8)**: 
 	* **Primary team role**: API research/music player
-  	* **Contributions**:  YouTube widget, assisted with timer and APIs 
+  	* **Contributions**:  YouTube widget, assisted with timer, README and APIs 
   	* **Key code portions**: JavaScript and HTML
 
 * **[Jennifer Menze](https://github.com/jamenze)**: 
