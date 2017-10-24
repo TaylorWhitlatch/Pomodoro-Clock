@@ -12,6 +12,7 @@ background-color: #5A0000;
 
 }
 
+<<<<<<< HEAD
 @keyframes bounce {
    
 }
@@ -37,6 +38,11 @@ background-color: #5A0000;
 @font-face {
 	font-family: 'Flamante';
 	src: url('../fonts/Flamante/Flamante-Serif-FFP.ttf');
+=======
+@font-face {
+	font-family: 'Flamante';
+	src: url('../fonts/Flamante-Serif-FFP.ttf');
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 	/*font-weight: 500;*/
 }
 
@@ -113,12 +119,21 @@ background-color: #5A0000;
 	color: #800000;
 
 	 }
+<<<<<<< HEAD
 
 
 /*.jumbotron a:hover {
 	color: #800000; 
 }*/
 
+=======
+
+
+/*.jumbotron a:hover {
+	color: #800000; 
+}*/
+
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 /*.lead {
 	margin-top: 20px;
 	font-family: sans-serif;
@@ -229,6 +244,7 @@ element.style {
 	float: right;
 }
 
+<<<<<<< HEAD
 .play {
 	text-align: left;
 	font-size: 20px;
@@ -237,8 +253,72 @@ element.style {
 .work-time {
 	text-align: right;
 	font-size: 20px;
+=======
+
+.logo {
+	content:url(../images/new_logo.png);
+    max-width: 18%;
+    height: auto;
+	display: inline-block;
+	margin-bottom: -10px;
+	margin-right: -15px;
+	position: relative;
+	padding-right: 20px;
 }
 
+
+/*slide down manu for development team*/
+#teamTogglebox{
+	position: absolute;
+	width: 400px;
+	left: 36%;
+}
+
+
+/*drop down menu with instructions*/
+.slideTogglebox{
+		position: absolute;
+		left:32%;
+		text-align: left;
+		padding:8px;
+		margin:16px;
+		margin-top: 0;
+		border:3px solid white;
+		width:500px;
+		height:340px;
+		background-color: grey;
+		color: white;
+        font-size: 18px;
+        z-index: 6;
+	}
+
+/*.clear{
+		clear:both;
+}*/
+
+/*sizing image of chuck norris*/
+.back img{
+	width:450px;
+	
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
+}
+/*flip effect start*/
+.flip-container{
+	perspective: 1000px;
+	/*border: 5px solid green;*/
+	/*transform: rotateY(180deg);*/
+}
+/*
+.flip-container:hover .flipper{
+	transform:rotateY(180deg);
+}*/
+
+.flip-container .front .back{
+	width: 500px;
+	margin: 0 auto;
+}
+
+<<<<<<< HEAD
 .logo {
 	content:url(../images/new_logo.png);
     max-width: 18%;
@@ -378,6 +458,16 @@ element.style {
     transform-style: preserve-3d;
 }
 
+=======
+.flipper{
+	position: relative;
+/*    specifies how long transition would take*/
+	-webkit-transition: all 1s;
+/*    the transform-style property specifies how nested elements are rendered in 3D space.(flat - do not preserve, preserve-3d - will preserve*/
+    transform-style: preserve-3d;
+}
+
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 .front, .back{
 	position: relative;
 	backface-visibility: hidden;
@@ -398,6 +488,7 @@ element.style {
 }
 /*flip effect end*/
 
+<<<<<<< HEAD
 /*resizing chucks picture*/
 #chuck-picture{
 	width: 450px;
@@ -414,6 +505,10 @@ element.style {
 
 .modal-content{
 	background-color: lightgreen;
+=======
+#start {
+	background-color: #800000;
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 }
 /*invisible test button shows up while howering over div with $nbsp*/
 /*look for ghost button in top left corner*/
@@ -434,6 +529,26 @@ element.style {
 .open-window{
 /*	width: 40%;
 */	height:25%;
+}
+
+
+
+
+
+#reset {
+	background-color: white;
+	color: #800000;
+}
+
+.btn-default {
+	background-color: #800000;
+	color: white;
+}
+
+#slideToggle:hover {
+	text-decoration: blue;
+	cursor: pointer;
+
 }
 
 

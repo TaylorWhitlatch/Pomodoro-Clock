@@ -1,11 +1,15 @@
 
 console.log("test")
+<<<<<<< HEAD
 //setting up global variables
+=======
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 var workLength = 25;
 var playLength = 5;
 // var alarm = new Audio('http://www.orangefreesounds.com/wp-content/uploads/2016/06/Ringing-clock.mp3?_=1');
 var alarm = new Audio('sound/timesup.mp3')
 var loop = 0;
+<<<<<<< HEAD
 var longRest = 1;
 var longBreak = 30;
 var jokeInt;
@@ -13,10 +17,14 @@ var timeWorked = [];
 var timeOnBreak = []; // global variable for jokes
 //end of setting up global variables
 $('#reset').hide(); //leaves only start button in the beginning
+=======
+$('#reset').hide(); //leaves only start button on start
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 // document.querySelector("#myCard").classList.toggle("flip")
 // $("#myCard").click(function(){          //that was a test button for flipping screen
 //     $(".flipper").toggleClass("flip");
 // });
+<<<<<<< HEAD
 $('#worktime').hide();
 $('#breaktime').hide();
 //sliding intructions start
@@ -29,6 +37,23 @@ $('#slideToggle').mouseout(function(){
     $(this).css("color","#F0EAD6")
     $('.slideTogglebox').slideUp();
 })
+=======
+
+
+// Make Logo bounce upon click
+$('.logo').click(function(){
+  $('.logo').effect( "bounce", { times: 3 }, "slow" );
+});
+
+
+//sliding intructions start
+$('.slideTogglebox').hide();
+$('#slideToggle').click(function(){
+    // $(this).css("color","blue")
+    $('.slideTogglebox').slideToggle();
+})
+
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 //sliding instructions end
 
 //sliding footer
@@ -36,11 +61,19 @@ $('#slideToggle').mouseout(function(){
 $('#teamTogglebox').hide();
 $('#team').mouseover(function(){
     $(this).css("color","blue")
+<<<<<<< HEAD
     $('#teamTogglebox').slideDown();
 })
 $('#team').mouseout(function(){
     $(this).css("color","#F0EAD6")
     $('#teamTogglebox').slideUp();
+=======
+    $('#teamTogglebox').slideToggle();
+})
+$('#team').mouseout(function(){
+    $(this).css("color","#F0EAD6")
+    $('#teamTogglebox').slideToggle();
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 })
 //sliding instructions for footer
 
@@ -52,11 +85,19 @@ $('#team').mouseout(function(){
     if (workLength > 90){ // logic to limit to 2 digits
         workLength = 95
     }else{
+<<<<<<< HEAD
     $('.minutes').html(workLength);
     $('.minutes-interval').text(workLength);// using html and text interchangebly
     }                                       // seems to be no difference
     $('.minutes').html(workLength);
     $('.minutes-interval').html(workLength);
+=======
+    $('.minutes').text(workLength);
+    $('.minutes-interval').text(workLength);// using html and text interchangebly
+    }                                       // seems to be no difference
+    $('.minutes').text(workLength);
+    $('.minutes-interval').text(workLength);
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
   });
 
 
@@ -86,9 +127,15 @@ $('#team').mouseout(function(){
     playLength -= 5;
     if (playLength < 10){ //logic to stay with 2 digits
       playLength = 5
+<<<<<<< HEAD
       $("#playTimer").html('0' + playLength);
     }else{
       $("#playTimer").html(playLength)
+=======
+      $("#playTimer").text('0' + playLength);
+    }else{
+      $("#playTimer").text(playLength)
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
     } 
   });
 //end of listeners for buttons plus and minus
@@ -96,17 +143,25 @@ $('#team').mouseout(function(){
 function startTimer() {    //to start timer
   $('#start').fadeOut();
   $('#reset').fadeIn();
+<<<<<<< HEAD
   loop = 0;
   seconds = 0;
   countDown(workLength, seconds, loop);
+=======
+  seconds = 0;
+  countDown(workLength, seconds);
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 }
 
 function reset() {         //to reset timer
     clearInterval(countInt);
     workLength = 25;
     playLength = 5;
+<<<<<<< HEAD
     longRest = 1;
     loop = 0;
+=======
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
     $('.minutes').html(workLength); //resets minutes and seconds on main timer
     $('.seconds').html('00');
     $('.minutes-interval').html(workLength); //resets minutes on user input
@@ -114,6 +169,7 @@ function reset() {         //to reset timer
     $('#start').fadeIn();
     $('#reset').fadeOut();
     $('#current-session').html('Work Session');
+<<<<<<< HEAD
     jokeInt = setTimeout(getJoke, 50000000); 
 
     function getSum(total, num) {
@@ -208,6 +264,30 @@ function countDown(minutes,seconds) {
           alarm.play();
       // var timeOut = setTimeout(explode, 2000);
       countDown(time,0); // timer, recursive call
+=======
+}
+
+function countDown(minutes,seconds) {
+ countInt = setInterval(function(){
+    if (minutes == 0 && seconds == 0) {
+        clearInterval(countInt);
+        if (loop == 0) {
+            time = playLength;
+            loop += 1;
+            $('#current-session').text('Rest Time');
+            $(".flipper").toggleClass("flip");
+        } else {
+            time = workLength;
+            loop -= 1;
+            $(".flipper").toggleClass("flip");
+            $('#current-session').text('Work Session');
+        }
+          alarm.play();
+          $('.logo').effect( "bounce", { times: 3 }, "slow" );
+          
+      //var timeOut = setTimeout(explode, 2000);
+      countDown(time,0); // recursive timer call
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
       } else if (seconds != 0) {
           seconds -= 1;
       } else if (seconds == 0) {
@@ -221,10 +301,19 @@ function countDown(minutes,seconds) {
         
     }, 10);
 }   
+<<<<<<< HEAD
  
 // function explode(){
 //    $("#current-session").hide( "explode", {pieces: 16 }, 2000 );
 //    // clearInterval(timeOut);
 //    return
 // }
+=======
+
+function explode(){
+   $("#current-session").hide( "explode", {pieces: 16 }, 2000 );
+   // clearInterval(timeOut);
+   return
+}
+>>>>>>> d485464a58fd1f2302c8f5c3b45a188ccbc7d27d
 
