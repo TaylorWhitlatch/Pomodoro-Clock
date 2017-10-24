@@ -1,8 +1,6 @@
 ![](/images/new_logo.png)
 
-<img src="/images/new_logo.png" alt="Drawing" style="width: 80px;"/>
-
-<img src="/images/new_logo.png" width="50" height=50" />
+<img src="/images/new_logo.png" alt="Drawing" style="width: 30"/>
 
 ## Overview of Project:
 Catch-Up! is a website designed with busy professionals in mind. By entering your tasks, work time, and break time you can use Catch-Up! to create a custom timer that will maximize your effectiveness and time management skills. 
