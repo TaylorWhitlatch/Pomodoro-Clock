@@ -20,14 +20,11 @@ $('#reset').hide(); //leaves only start button on start
 
 //sliding intructions start
 $('.slideTogglebox').hide();
-$('#slideToggle').mouseover(function(){
-    $(this).css("color","blue")
+$('#slideToggle').click(function(){
+    // $(this).css("color","blue")
     $('.slideTogglebox').slideToggle();
 })
-$('#slideToggle').mouseout(function(){
-    $(this).css("color","#F0EAD6")
-    $('.slideTogglebox').slideToggle();
-})
+
 //sliding instructions end
 
 //sliding footer

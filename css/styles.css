@@ -343,7 +343,11 @@ element.style {
 	color: white;
 }
 
+#slideToggle:hover {
+	text-decoration: blue;
+	cursor: pointer;
 
+}
 
 
 
